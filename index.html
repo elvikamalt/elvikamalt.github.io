@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="top__header">
+        <a href="#">
+            <img src="./images/logo.png" alt="Logo">
+        </a>
+
+        <div class="menu">
+            <div class="menu-btn">
+                <span class="btn__line"></span>
+            </div>
+
+            <div class="top__menu">
+                <a href="#about" class="menu__link">обо мне</a>
+                <a href="#skills" class="menu__link">навыки</a>
+                <a href="#works" class="menu__link">работы</a>
+                <a href="#contacts" class="menu__link">контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- Главная страница -->
+        <div class="top">
+            <div class="top__title">
+                <h1 class="title__h1">Эльвира Камалтдинова </h1>
+                <h2 class="title__h2">UX/UI дизайнер</h2>
+            </div>
+        </div>
+
+        <!-- Блок Обо мне -->
+        <div class="about" id="about">
+            <h3 class="title__h3">обо мне</h3>
+
+            <div class="about__content">
+                <img class="about__img" src="./images/photo.jpg" alt="Photo">
+
+                <div class="about__text">
+                    <p class="about__p">Привет! Меня зовут Эльвира, я UX/UI дизайнер.</p>
+                    <p class="about__p">Я закончила магистратуру по направлению &laquo;Прикладная математика и
+                        информатика&raquo;.
+                        Сейчас учусь на факультете дизайна в GeekBrains.</p>
+                    <p class="about__p">Я провожу UX-исследования, разрабатываю макеты сайтов, приложений и плакатов,
+                        рисую
+                        иллюстрации.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Блок Навыки -->
+        <div class="skills" id="skills">
+            <h3 class="title__h3">навыки</h3>
+
+            <div class="skills__logos">
+                <img class="skills__img" src="./images/photoshop.png" alt="Photoshop">
+                <img class="skills__img" src="./images/figma.png" alt="Figma">
+                <img class="skills__img" src="./images/indesign.png" alt="Indesign">
+                <img class="skills__img" src="./images/blender.png" alt="Blender">
+                <img class="skills__img" src="./images/illustrator.png" alt="Illustrator">
+                <img class="skills__img" src="./images/tilda.png" alt="Tilda">
+            </div>
+        </div>
+
+        <!-- Блок Работы -->
+        <div class="works" id="works">
+            <h3 class="title__h3">работы</h3>
+
+            <div class="works__slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/mars_poster.jpg" class="d-block w-100" alt="Mars poster">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/cat_poster.jpg" class="d-block w-100" alt="Cat poster">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/glitch.jpg" class="d-block w-100" alt="Glitch">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок контакты -->
+        <footer class="contacts" id="contacts">
+            <h3 class="contacts__title">контакты</h3>
+
+            <div class="contacts__content">
+                <div class="contacts__mt">
+                    <a class="mt__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                    <a class="mt__link" href="tel:89888888888">8 988 888 88 88</a>
+                </div>
+
+                <div class="contacts__social">
+                    <a class="s__link" href="https://www.instagram.com/">
+                        <img class="contacts__img" src="./images/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a class="s__link" href="https://dribbble.com/">
+                        <img class="contacts__img" src="./images/dribbble.png" alt="Dribbble">
+                    </a>
+
+                    <a class="s__link" href="https://www.behance.net/">
+                        <img class="contacts__img" src="./images/behance.png" alt="Behance">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

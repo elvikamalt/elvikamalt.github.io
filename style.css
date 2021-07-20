@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('./fonts/segoeui.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #0A0819;
+    font-family: SegoeUI;
+    color: #ECECEC;
+}
+
+/* Настройки шрифтов */
+.title__h1 {
+    font-family: Jura;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 96px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.title__h2 {
+    font-family: Jura;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 88px;
+}
+
+.title__h3, .contacts__title {
+    font-family: Jura;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+    text-transform: lowercase;
+}
+
+.title__h3 {
+    margin-bottom: 48px;
+}
+
+.about__text, .mt__link {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+/* Для фоновых линий */
+.main {
+    background: url(./images/line_blue.png) no-repeat center 525px,
+                url(./images/line_pink.png) no-repeat center 375px,
+                url(./images/bg_contacts.jpg) no-repeat center bottom,
+                url(./images/bg_title.jpg) no-repeat center top;
+}
+
+/* Header */
+.top__header {
+    max-width: 1136px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: chartreuse; */
+}
+
+.top__menu {
+    width: 537px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    font-family: Jura;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.menu-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.btn__line,
+.btn__line::before,
+.btn__line::after {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -15px;
+    width: 30px;
+    height: 2px;
+    background: #ECECEC;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.btn__line::before,
+.btn__line::after {
+    content: '';
+    display: block;
+}
+
+.btn__line::before {
+    transform: translateY(-7px);
+}
+
+.btn__line::after {
+    transform: translateY(7px);
+}
+
+/* Анимация */
+.menu-btn.open .btn__line {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .btn__line::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .btn__line::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Главная страница */
+.top {
+    width: 100%;
+    padding-top: 229px;
+    padding-bottom: 517px;
+}
+
+.top__title {
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Блок Обо мне */
+.about {
+    width: 100%;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    /* background-color: blue; */
+}
+
+.about__content {
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about__img {
+    margin-bottom: 32px;
+}
+
+.about__text {
+    width: 464px;
+}
+
+.about__p {
+    margin-bottom: 24px;
+}
+
+/* Блок Навыки */
+.skills {
+    width: 100%;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    /* background-color: green; */
+}
+
+.skills__logos {
+    max-width: 1136px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.skills__img {
+    margin-bottom: 16px;
+}
+
+/* Блок Работы */
+.works {
+    width: 100%;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    /* background-color: blueviolet; */
+}
+
+.works__slider {
+    width: 560px;
+    height: 788px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Блок Контакты */
+.contacts {
+    width: 100%;
+    padding-top: 67px;
+    padding-bottom: 276px;
+}
+
+.contacts__title {
+    margin-bottom: 80px;
+}
+
+.contacts__mt {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.contacts__social {
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s__link {
+    text-decoration: none;
+}
+
+/* Выравнивание */
+.contacts__content, .title__h3, .contacts__title {
+    width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ссылки */
+.menu__link, .mt__link {
+    text-decoration: none;
+    color:#ECECEC;
+}
+
+/* Настройка ховера */
+.menu__link:hover, .mt__link:hover {
+    text-decoration: underline;
+    color:#ECECEC;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+/* Настройки шрифтов */
+.title__h1 {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.title__h2 {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.title__h3, .contacts__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.title__h3 {
+    margin-bottom: 56px;
+}
+
+.about__text, .mt__link {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* Для фоновых линий */
+.main {
+    background: url(./images/line_blue_tablett.png) no-repeat center 525px,
+                url(./images/line_pink_tablett.png) no-repeat center 375px,
+                url(./images/bg_contacts.jpg) no-repeat center bottom,
+                url(./images/bg_title.jpg) no-repeat center top;
+    position: relative;
+}
+
+/* Header */
+.top__header {
+    max-width: 624px;
+}
+
+.menu {
+    width: 468px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top__menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top__menu :first-child {
+    padding-top: 48px;
+}
+
+.menu__link {
+    font-size: 32px;
+    line-height: 24px;
+    margin-bottom: 65px;
+    text-align: right;
+}
+
+.menu__link::after {
+    content: '';
+    display: block;
+    width: 324px;
+    height: 1px;
+    background: rgba(134,139,254,.5);
+    margin-top: 32px;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.top__menu.show {
+    display: flex;
+}
+
+/* Главная страница */
+.top__title {
+    max-width: 624px;
+}
+
+/* Блок Обо мне */
+.about__content {
+    max-width: 655px;
+}
+
+.about__img {
+    width: 302px;
+    height: 402px;
+}
+
+.about__text {
+    width: 304px;
+}
+
+/* Блок Навыки */
+.skills__logos {
+    max-width: 560px;
+}
+
+.skills__img {
+    width: 144px;
+    height: 141px;
+    margin-bottom: 36px;
+}
+
+/* Блок Работы */
+.works__slider {
+    width: 525px;
+    height: 758px;
+}
+
+/* Блок Контакты */
+.contacts {
+    padding-bottom: 86px;
+}
+
+/* Выравнивание */
+.contacts__content, .title__h3, .contacts__title {
+    width: 624px;
+}
+
+/* Настройка ховера */
+.menu__link:hover, .mt__link:hover {
+    text-decoration: none;
+}
+}
+
+
+
+
+
+
+@media (max-width: 425px){
+    /* Настройки шрифтов */
+    .title__h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .title__h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .title__h3, .contacts__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .title__h3 {
+        margin-bottom: 24px;
+    }
+
+    .about__text, .mt__link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Для фоновых линий */
+    .main {
+        background: url(./images/line_blue_mobile.png) no-repeat center 425px,
+                    url(./images/line_pink_mobile.png) no-repeat center 335px,
+                    url(./images/bg_contacts.jpg) no-repeat center bottom,
+                    url(./images/bg_title.jpg) no-repeat center top;
+        position: relative;
+    }
+
+    /* Header */
+    .top__header {
+        max-width: 327px;
+    }
+
+    .menu {
+        width: 248px;
+    }
+
+    .top__menu :first-child {
+        padding-top: 32px;
+    }
+
+    .menu__link {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    .menu__link::after {
+        width: 200px;
+        margin-top: 16px;
+    }
+
+    /* Главная страница */
+    .top {
+        padding-top: 205px;
+        padding-bottom: 405px;
+    }
+
+    .top__title {
+        max-width: 327px;
+    }
+
+    /* Блок Обо мне */
+    .about {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .about__content {
+        max-width: 327px;
+    }
+
+    .about__text {
+        width: 295px;
+    }
+
+    .about__img {
+        margin-bottom: 24px;
+    }
+
+    .about__p {
+        margin-bottom: 16px;
+    }
+
+    /* Блок Навыки */
+    .skills {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .skills__logos {
+        max-width: 288px;
+    }
+
+    .skills__img {
+        width: 88px;
+        height: 87px;
+        margin-bottom: 12px;
+    }
+
+    /* Блок Работы */
+    .works {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .works__slider {
+        width: 215px;
+        height: 311px;
+    }
+
+    /* Блок Контакты */
+    .contacts {
+        padding-top: 32px;
+        padding-bottom: 50px;
+    }
+
+    .contacts__title {
+        margin-bottom: 32px;
+    }
+
+    .contacts__social {
+        width: 104px;
+    }
+
+    .contacts__img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Выравнивание */
+    .contacts__content, .title__h3, .contacts__title {
+        width: 327px;
+    }
+}
